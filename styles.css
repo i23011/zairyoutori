@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.input-section {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+canvas {
+  border: 1px solid #333;
+  margin-top: 20px;
+}
