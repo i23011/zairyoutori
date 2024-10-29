@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>木材の材料取り計算アプリ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>木材の材料取り計算アプリ</h1>
+
+  <div class="container">
+    <div class="input-section">
+      <h2>材料の寸法を入力</h2>
+      <label>縦寸法 (mm): <input type="number" id="materialHeight" required></label>
+      <label>横寸法 (mm): <input type="number" id="materialWidth" required></label>
+      <button onclick="setMaterial()">材料を用意する</button>
+    </div>
+
+    <div class="input-section">
+      <h2>部品の寸法を入力</h2>
+      <label>部品の縦寸法 (mm): <input type="number" id="partHeight" required></label>
+      <label>部品の横寸法 (mm): <input type="number" id="partWidth" required></label>
+      <label>部品間の隙間 (mm): <input type="number" id="gap" required></label>
+      <button onclick="addNextPart()">部品を追加する</button>
+      <button onclick="clearParts()">部品を全部取り除く</button>
+    </div>
+
+    <div class="canvas-container">
+      <canvas id="materialCanvas"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
